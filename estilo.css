@@ -1,0 +1,308 @@
+/* LIMPEZA PADRÃO */
+ *{
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ Body{
+			background: url('imagens/fundo.jpg');
+
+		}
+
+ /* FORMATAÇAO DE LINKS */
+ a:link{
+ 	color: black;
+ }
+
+ a:visited{
+ 	color: gray;
+ } 
+ 
+  #inicio a:link , #inicio a:visited {
+  		font-size: 20px;
+  		text-decoration: none;
+
+
+  	}
+  	#inicio a:visited{
+  		color: green;
+  	}
+
+  #inicio a:hover{
+  	color: red;
+  	background: white;
+  }
+
+  #fundopag a:link, #fundopag a:visited{
+  	text-decoration: none;
+
+  }
+
+
+/* LOGIN E CADASTRO */
+
+	#principal {
+		margin: 100px 500px;
+
+		}
+
+
+	.titulo {
+				border width: 3px;
+				border-color: red;
+				border-style: solid;
+
+				text-align: center;
+
+				background-color: gray;
+			}
+
+
+	.bordas {
+
+			border-style: solid;
+			border-width: 2px;
+			width: 500px;
+			text-align: center;
+			background-color: white;
+
+			padding:20px 0px;
+
+		}
+
+
+/* PAGINA DE CONTATO */		
+	
+ 		.fundoimg {
+                border-style: dashed;
+                border-color: blueviolet;
+                border-width: 2px;
+                margin-left: 100px;
+            }
+
+
+         .imagem-galeria{
+			background: white;
+			width: 265px;
+			padding: 50px;
+			float: left;
+			margin: 15px;
+			
+
+		}
+
+ 		.bordasctt {
+
+			border-style: solid;
+			border-width: 2px;
+			background-color: white;
+
+			padding: 30px;
+
+		 }
+
+		.tituloctt {
+			border width: 3px;
+			border-color: red;
+			border-style: solid;
+			width: 600px;
+			margin-left: 400px;
+			text-align: center;
+
+			background-color: gray;
+		}
+
+		.quadroimg {
+			border-style: solid;
+			border-width: 1px;
+			border-color: red;
+		}
+
+
+
+
+
+
+ /* PAGINA PRINCIPAL / CONHECENDO O JOGO */
+
+
+
+ 		#inicio{
+ 			padding: 30px;
+ 			background-color: red;
+ 			text-align: center;
+ 			border: 1px solid;
+
+ 		}
+
+ 		#titulo {
+ 			color: red;
+			border width: 30px;
+			border-color: black;
+			border-style: double;
+			width: 700px;
+			margin-left: 350px;
+			text-align: center;
+			padding: 20px;
+			background-color: white;
+		}
+
+
+		.bordaspp {
+			border-style: solid;
+			border-width: 2px;
+			padding: 5px 0px;
+			text-align: center;
+
+		}
+
+		.link {
+
+			padding: 10px;
+
+			color: rgb(0, 0, 0);
+		}
+
+
+		.preco {
+			color: red;
+			text-align: center;
+		}
+
+		.desconto {
+			color: green;
+
+		}
+
+		#fundopag {
+			 background-color: white ;
+             border-style: solid;
+             border-color:;
+
+             padding: 50px;
+		}
+
+		  /*	#link{
+			border-style: dotted;
+			border-width: 2px;
+			border-color: blue;
+
+		}*/
+		.perguntas {
+			font-size: 20px;
+		}
+
+
+/* SOBRE O JOGO / PROJETO */
+ #titulo2 {
+                border width: 3px;
+                border-color: red;
+                border-style: solid;
+                text-align: center;
+                background-color: gray;
+
+                width: 600px;
+                margin-left: 400px;
+            }
+
+              }
+            #fundoim{
+                background-color: white;
+            }
+
+
+            .titulo2{
+                border width: 3px;
+                border-color: skyblue;
+                border-style: solid;
+                width: 600px;
+                margin-left: 400px;
+                text-align: center;
+                background-color: gray;
+
+            }
+
+            .fundoimg{
+                border-style: dashed;
+                border-color: blueviolet;
+                border-width: 2px;
+            }
+          
+
+            .bordas{
+                border-style: solid;
+                border-color: green;
+                border-width: 3px;
+
+
+            }
+
+            .bordas2{
+                border-style: solid;
+                border-width: 2px;
+
+                text-align: center;
+
+
+            }
+            .comentario{
+                border-style: solid;
+                border-width: 2px;
+                padding: 0px 5px;
+                width: 500px;
+
+            }
+
+            .bordaspjt {
+
+			border-style: solid;
+			border-width: 2px;
+			padding: 20px 10px;
+			background-color: white;
+			position: relative;
+
+		}
+
+	   .posiçao{
+	   
+	   	padding: 9px 10px;
+	    position: absolute;
+	    top: 385px;
+	    left: 617px;
+	    border-style: solid;
+        border-color: green;
+        border-width: 3px;
+        width: 500px;
+        text-align: center;
+	   }
+
+	   .clear{
+	   	clear: both;
+	   }
+
+	   .bordaimg{
+	   	border-style: none;
+	   	border-color: red;
+	   	border-width: auto;
+
+
+	   }
+	   .cor-fundo{
+	   	color:; 
+	   }
+
+	   .centroimg{
+	   	margin-left: 460px;
+	   	background: gray;
+	   }
+
+
+
+
+
+		
+
+
+
+
+

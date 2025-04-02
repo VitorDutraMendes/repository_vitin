@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        div {
+            border: solid 2px rgb(0, 0, 0);
+            width: 40%;
+        }
+
+        .fundo1 {
+            background-color: rgb(0, 0, 0);
+        }
+
+        button {
+            background-color: rgb(231, 20, 20);
+        }
+
+        button {
+            font-size: 36px;
+            margin-top: 30px;
+            border-radius: 10px;
+            background-color: rgb(202, 175, 228);
+            border: 2px black;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="div1">
+        <h1>teste</h1>
+
+    </div>
+
+    <br>
+    <button id="bt1"> mudar cor de fundo</button>
+    <br>
+    <button id="bt2"> voltar cor de fundo</button>
+    <br>
+    <button id="bt3"> cor aleatoria de fundo</button>
+
+    <script>type = "text/javascript" >
+            $(document).ready(function () {
+                alert('jquery ok');
+                $('#div1').mouseover(function () {
+                    alert('mouse no alert');
+                })
+            });
+        $("#bt1").on("click", function () {
+            $("body").addClass("fundo1");
+        });
+        $("#bt2").on("click", function () {
+            $("body").removeClass("fundo1");
+        });
+        $("#bt3").click(function () {
+            let cor = "#" + rand10() + "" + rand10() + "" + rand10() + "";
+            //alert(cor);
+            $("body").css("background", cor);
+        });
+
+        function rand10() {
+            return Math.round(Math.random() * 10);
+
+        }
+
+    </script>
+</body>
+
+</html>

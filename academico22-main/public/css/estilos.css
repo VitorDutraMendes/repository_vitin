@@ -1,0 +1,18 @@
+.titulo {
+    font-size: x-large;
+    margin-right: 32px;
+}
+
+.container {
+    border: 2px solid rgb(255, 8, 0);
+    width: 90%;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 5%;
+}
+
+#imgUser {
+    border-radius: 50%;
+    border: 1px solid rgba(10, 10, 10, 0);
+    width: 100px;
+}

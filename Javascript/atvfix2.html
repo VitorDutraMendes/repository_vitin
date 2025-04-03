@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>atv2</title>
+	<script>
+
+		var nome = prompt('qual o seu nome? ')
+		var h = prompt(' Olá '+nome+', qual a sua altura em centimetros? ')
+		h = parseFloat(h)
+		var p = prompt('qual o seu peso? ')
+		p= parseFloat(p)
+
+		h /= 100
+
+		var m= p/ (Math.pow(h,2))
+
+		if (m<16){
+			clas= 'Baixo peso muito grave'
+			document.write( ''+nome+' possui indice de massa corporal igual a '+m+' , sendo classificado como:'+clas)
+		}
+
+		else if ( m >=16 && m<17){
+			clas= 'Baixo peso grave'
+			document.write('' +nome+' possui indice de massa corporal igual a '+m+' , sendo classificado como:'+clas)
+		}
+
+		else if ( m >=17 && m<18.50){
+			clas= 'Baixo peso '
+			document.write('' +nome+' possui indice de massa corporal igual a '+m+' , sendo classificado como:'+clas)
+		}
+
+		else if ( m >=18.50 && m<25){
+			clas= 'peso normal'
+			document.write('' +nome+' possui indice de massa corporal igual a '+m+' , sendo classificado como:'+clas)
+		}
+
+		else if ( m >=25 && m<30){
+			clas= 'sobrepeso'
+			document.write('' +nome+' possui indice de massa corporal igual a '+m+' , sendo classificado como:'+clas)
+		}
+
+		else if ( m >=30 && m<35){
+			clas= 'obsidade grau |'
+			document.write('' +nome+' possui indice de massa corporal igual a '+m+' , sendo classificado como:'+clas)
+		}
+
+		else if ( m >=35 && m<40){
+			clas= 'obsidade grau ||'
+			document.write('' +nome+' possui indice de massa corporal igual a '+m+' , sendo classificado como:'+clas)
+		}
+
+		else{ 
+			clas= 'obsidade grau |||'
+			document.write('' +nome+' possui indice de massa corporal igual a '+m+' , sendo classificado como:'+clas)
+
+		}
+
+
+	</script>
+</head> 
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>swich</title>
+	<script>
+
+		var parametro = prompt(" escolha: 1- raiz quadrada, 2- divisao, 3- multiplicacao ")
+
+		switch (parseInt(parametro))
+		{
+
+			case 1:
+				var n = prompt (" digite um numero para realizar a raiz: ")
+				n = parseInt(n)
+				n = Math.sqrt(n)
+				document.write('resultado: '+n)
+			
+				
+				break
+
+			case 2:
+				var n = prompt (" digite um numero para realizar a divisao: ")
+				n = parseInt(n)
+				n = n/2
+				document.write('resultado'+n)
+
+				break
+
+			case 3:
+				var n = prompt(" digite um numero para realizar a multiplicacao: ")
+				var m =prompt(" multiplicar "+ n + ' por: ')
+				n = parseInt(n)
+				m = parseInt(m)
+				r = n * m
+				document.write('resultado '+r)
+				break 
+
+			default: 
+				document.write('escolha inexistente')
+				
+
+
+		}
+
+
+		 
+	</script>
+		
+</head> 
+<body>
+	<header>Operacoes matematica </header>
+
+
+
+</body>
+</html>

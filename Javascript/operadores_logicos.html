@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>operadores logiccos</title>
+
+	<script>
+		/*if (2==2 && 3>=1 || 3==3 && 1!=1)  // && (E) / || (OU) / ! (nageção) EX: if(!(5==2)) - false / if(!(4==2)) - true
+		{
+			document.write('true')
+		}
+		else{
+			document.write('false')
+		}*/
+
+		 var med= prompt(' qual a media? ')
+		 var not= prompt(' qual a nota?')
+		 var faltas = prompt('digite as falats:')
+		 var ftmax= 15
+
+		/* if  (not>=med && faltas<= ftmax) 
+		 {
+			document.write('Aprovado')
+		 }
+
+		 else{
+		 	document.write('Reprovado')
+		 }*/
+
+		// var resultado = <condiçao>? <verdadeiro> : <falso> // OPERADOR TERNARIO
+
+		 var resultado =( not>=med && faltas<= ftmax) ? 'Aprovado' : 'Reprovado'
+		 document.write(resultado)
+		
+
+
+	</script>
+</head> 
+<body>
+
+</body>
+</html>
+

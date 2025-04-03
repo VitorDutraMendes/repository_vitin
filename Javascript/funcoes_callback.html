@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>funções callback</title>
+	<script>
+		function exibirArtigo(id,callbackSucesso , callbackErro){
+			//logica recuperar o id via requisiçao http
+			if(titulo == 1 ){
+				callbackSucesso(titulo1,descricao1)
+			}
+			
+			else if(titulo==2){
+				callbackSucesso(titulo2,descricao2)
+			}
+			else{
+				callbackErro('Erro ao recuperar dados')
+			}
+		}
+
+			var callbackSucesso = function(titulo, descricao){
+				document.write('<h1>'+titulo+'</h1>')
+				document.write('<hr />')
+				document.write('<p>'+descricao+'</p>')
+
+
+			}
+
+			var callbackErro = function(erro){
+				document.write('<p> <b> Erro:'+erro+'</p>')
+
+			}
+
+			var titulo1 = 'sessao terror'
+			var descricao1= ' the walking , it a coisa '
+			var titulo2 = ' sessao comedia'
+			var descricao2= 'um policial em apuros, terra de gigantes'
+
+			var titulo = prompt(' qual o numero do titulo listado que queira acessar? 1 a 3: ')
+			
+
+		
+			exibirArtigo(1,callbackSucesso, callbackErro)
+		
+	</script>
+</head> 
+<body>
+
+
+</body>
+</html>

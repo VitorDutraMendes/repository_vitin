@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>funções MATEMATICA</title>
+	<script>
+		// calculos aritimeticos de soma e subtraçao
+
+		function calculo(num1,num2, op){
+			if (op == 'soma'){
+				r = num1 + num2
+			}
+			else{
+				r= num1-num2
+			}
+			return r
+		}
+
+		num1=prompt('digite o primeiro número: ')
+		num1 = parseFloat(num1)
+		num2=prompt('digite o segundo numero número: ')
+		num2 = parseFloat(num2)
+		oper=prompt(' qual operaçao deseja fazer? soma ou subtraçao: ')
+		op= oper.toLowerCase()
+		resultado = calculo(num1, num2, op) 
+
+		document.write('O resultado da '+op+' entre '+num1+' e ' +num2+' é: '+resultado)
+
+
+	</script>
+</head> 
+<body>
+
+
+</body>
+</html>

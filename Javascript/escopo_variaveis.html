@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>funções</title>
+	<script>
+		// 3 escopos: global, funcao e o bloco
+
+		var serie = 'friends'
+
+		// escopo de bloco
+		if (true){
+			var serie2 = 'game of thrones'
+			document.write(serie)
+		}
+		document.write(serie2)
+
+		document.write('<br/>')
+
+		function x(){
+			var serie3 = 'the walking dead' // nao cosnigo chamr fora da funcao no global ou bloco, fica indisponivel dentro da funçao
+			document.write(serie2)
+			document.write(serie)
+		}
+
+		document.write('<br />')
+		document.write(serie3)
+
+
+
+	</script>
+</head> 
+<body>
+
+
+</body>
+</html>

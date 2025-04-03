@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>funções MATEMATICA</title>
+	<script>
+		valp=0
+		res='s'
+		while( res == 's'){
+			prod=prompt('Digite o produto: ' )
+			val= prompt ('digite o valor do produto: ')
+			val= parseFloat(val)
+			document.write(prod+': '+val) 
+			document.write('<hr/>')
+		  	valp +=val
+			res=prompt('deseja adicionar mais itens? s ou n:')
+			res.toLowerCase()
+
+		}
+		 
+		document.write('preco total: '+valp)
+
+
+
+
+	</script>
+</head> 
+<body>
+
+
+</body>
+</html>

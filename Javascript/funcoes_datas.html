@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>funções MATEMATICA</title>
+	<script>
+		var data = new Date()
+		/*
+		document.write(data.getUTCDay()+'.  '+data.getDate()+'/')
+		document.write(data.getMonth()+'/')
+		document.write(data.getFullYear())
+
+		document.write(' '+data.getHours()+':'+ data.getMinutes())
+
+
+		// adicionar ou remover dias
+		document.write('para dias: <br/>')
+
+		document.write(data.toString())
+		data.setDate(data.getDate() + 2)
+		document.write('<hr/>')
+		document.write(data)
+		data.setDate(data.getDate() - 1)
+		document.write('<hr/>')
+		document.write(data)
+		document.write('<hr/>')
+
+		// para meses 
+		document.write('para meses: <br/>')
+		document.write(data.toString())
+		data.setMonth(data.getMonth() + 2)
+		document.write('<hr/>')
+		document.write(data)
+		data.setMonth(data.getMonth() - 1)
+		document.write('<hr/>')
+		document.write(data)
+		document.write('<hr/>')
+
+		// para anos:
+		document.write('para anos: <br/>')
+		document.write(data.toString())
+		data.setFullYear(data.getFullYear() + 2)
+		document.write('<hr/>')
+		document.write(data)
+		data.setFullYear(data.getFullYear() - 1)
+		document.write('<hr/>')
+		document.write(data)
+		document.write('<hr/>')
+									*/
+
+		// 15/01/2017
+		var data1 = new Date(2017,0, 15)
+
+		// 23/02/2017
+		var data2 = new Date(2017,1, 23)
+
+		document.write(data1.toString())
+		document.write('<hr/>')
+		document.write(data2.toString())
+		document.write(' <br/> <br/> <hr/>')
+		
+		// converter para algo que podemos calcular
+		document.write(data1.getTime())
+		document.write('<hr/>')
+		document.write(data2.getTime())
+
+		// 1 de janeiro de 1970 data de onde sao encontrados os milisegundos ate a data atual
+		document.write(' <br/> <br/> <hr/>')
+
+		// encontrar a qntd de milisegundos entre data1 e data2
+		var miliseg_entredatas=Math.abs(data1.getTime() - data2.getTime())
+		document.write(miliseg_entredatas)
+
+		// descobrir quantos dias representa essa qntd de milisegundos
+		// 1 dia tem 24h, cada hora tem 60min, cada minuto tem 60 segundos e cada segundo tem 1000 milisegundos.. Entao quantos milisegundos tem em um dia?
+
+		var miliseg_pordia = (1*24*60*60*1000)
+		document.write('. . 1 dia tem: '+miliseg_pordia+' milisegundos' )
+
+		document.write(' <br/> <br/> <hr/>')
+		// imprimir a divisao de milisegundos pelos milisegundo existentente em um dia..... para facilitar vou criar umas variaveis
+		document.write('A diferença entre 15/01/2017 e 23/02/2017 é de  '+Math.ceil(miliseg_entredatas/miliseg_pordia)+' dias')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head> 
+<body>
+
+
+</body>
+</html>
